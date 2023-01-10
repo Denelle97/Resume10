@@ -1,0 +1,257 @@
+.overide-nav {
+  background-color: white;
+  border-color: #C16E70;
+  border-bottom: 2rem;
+  
+}
+
+nav.navbar .nav-item {
+   display: flex;
+   gap: 1rem;
+   padding: 0rem;
+   flex-wrap: wrap;
+   
+}
+/* this is where i need to made my image responsive */ 
+
+#MainPicture {
+
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  border: 2px solid white;
+  text-align: center;
+  
+}
+/* Style applied to  all H1 - my name only ) */
+
+h1 {
+  color: white;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.Intro {
+  color: white;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+}
+
+#education{
+  color: #C16E70;
+  font-weight: bolder;
+}
+
+#experience {
+  color: #C16E70;
+  font-weight: bolder;
+}
+
+/* adds effects to my skills ID */
+.skills {
+  color: #C16E70;
+  font-weight: bolder;
+}
+
+/* this is where you wanna make changes */
+header {
+  
+  background-color: #C16E70;
+  padding: 5px;
+  justify-content: center;
+  text-align: center;
+  
+}
+
+body{
+  
+  font-family: Georgia, 'Times New Roman', Times, serif;
+ /* font-size:110%;
+  display: flex;
+  flex-direction: column;
+  background-image: url("../images/backGroundPhoto.jpg")
+  background-color : #C16E70;*/
+ 
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto ;
+  grid-gap: 10px;
+  padding: 10px;
+  background-color: #f3d8d8;
+  background-image: url("../images/backGroundPhoto.jpg"); 
+  background-position: center;
+  background-size: cover;
+  padding: 0%;
+  margin: 0%;
+}
+
+/*select all div's that are children of class*/
+/*.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+ /* text-align: center;*/
+ /* padding: 20px 0;
+  font-size: 30px;
+}
+*/
+/*use line numbers when spanning grid items.*/
+/*eductaion*/
+.item1 {
+  background-color: rgba(255, 255, 255, 0.8);
+  grid-row-start: 1;
+  grid-row-end: 1;
+}
+/*experience*/
+.item2{
+  background-color: rgba(255, 255, 255, 0.8);
+  grid-column-start: 1;
+
+  grid-column-end: 5;
+}
+/*Software and Operational Systems Experience*/
+.item3{
+  background-color: rgba(255, 255, 255, 0.8);
+  grid-row-start: 1;
+  grid-row-end: 1;
+}
+/*Skills*/
+.item4{
+  background-color: rgba(255, 255, 255, 0.8);
+  grid-row-start: 1;
+  grid-row-end: 1;
+
+}
+/*Accomplishments*/
+.item5{
+  background-color: rgba(255, 255, 255, 0.8);
+  grid-row-start: 1;
+  grid-row-end: 1;
+}
+
+
+@media screen and (max-width:768px){
+    .item1 {
+      grid-row-start: 1;
+      grid-row-end: 3;
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
+
+    .item5 {
+      grid-column-start: 2;
+      grid-column-end: 4;
+    }
+}
+
+@media screen and (max-width:550px){
+    .item1 {
+      grid-row-start: 1;
+      grid-row-end: 3;
+      grid-column-start: 1;
+      grid-column-end: 4;
+    }
+    
+    .item5 {
+      grid-column-start: 1;
+      grid-column-end: 4;
+    }    
+}
+
+@media screen and (max-width:375px){
+    /*eductaion*/
+.item1 {
+  
+  grid-column-start: 1;
+  grid-column-end: 1;
+}
+/*experience*/
+.item2{
+  
+  grid-column-start: 2;
+  grid-column-end: 2;
+}
+/*Software and Operational Systems Experience*/
+.item3{
+  
+  grid-column-start: 3;
+  grid-column-end: 3;
+}
+/*Skills*/
+.item4{
+  
+  grid-column-start: 4;
+  grid-column-end: 4;
+
+}
+/*Accomplishments*/
+.item5{
+  
+  grid-column-start: 5;
+  grid-column-end: 5;
+}
+
+}
+
+/* effects apply to the entire footer */
+footer {
+  color: white;
+  background-color: #C16E70;
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* animation style*/
+.fa {
+  display: inline-block;
+  width: 90px;
+  height: 90px;
+  background: #f1f1f1;
+  margin: 10px;
+  border-radius: 30%;
+  box-shadow: 0 5px 15px -5px #00000070;
+  color: #C16E70;
+  overflow: hidden;
+  position: relative;
+  }
+  
+  .fa i{
+    line-height: 90px;
+    font-size: 26px;
+    transition: 0.2s linear;
+  }
+  
+  .fa:hover i{
+    transform: scale(1.3);
+    color: #f1f1f1;
+  }
+  
+  .fa::before{
+    content: "";
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    background: #C16E70;  
+    transform: rotate(45deg);
+    left: -110%;
+    top: 90%;
+  }
+  
+  .fa:hover::before{
+    animation: aaa 0.7s 1;
+    top: -10%;
+    left: -10%;
+  }
+  
+  /*amimation */ 
+  @keyframes aaa {
+    0%{
+      left: -110%;
+      top: 90%;
+    }50%{
+      left: 10%;
+      top: -30%;
+    }100%{
+      top: -10%;
+      left: -10%;
+    }
+  }
