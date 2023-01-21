@@ -47,10 +47,12 @@ h1 {
 }
 
 /* adds effects to my skills ID */
-.skills {
+#text {
   color: #C16E70;
   font-weight: bolder;
 }
+
+
 
 /* this is where you wanna make changes */
 header {
