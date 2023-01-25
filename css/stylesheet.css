@@ -12,7 +12,7 @@ nav.navbar .nav-item {
    flex-wrap: wrap;
    
 }
-/* this is where i need to made my image responsive */ 
+/* this is where i need to make my image responsive */ 
 
 #MainPicture {
 
@@ -23,7 +23,7 @@ nav.navbar .nav-item {
   text-align: center;
   
 }
-/* Style applied to  all H1 - my name only ) */
+/* Style applied to my name only ) */
 
 h1 {
   color: white;
@@ -46,7 +46,7 @@ h1 {
   font-weight: bolder;
 }
 
-/* adds effects to my skills ID */
+/* adds effects to my text ID i couldnt use class because  */
 #text {
   color: #C16E70;
   font-weight: bolder;
@@ -89,11 +89,12 @@ body{
 }
 
 /*select all div's that are children of class*/
-/*.grid-container > div {
-  background-color: rgba(255, 255, 255, 0.8);
- /* text-align: center;*/
- /* padding: 20px 0;
-  font-size: 30px;
+/*.item > div {
+  display: flex;
+ background-color: rgba(255, 255, 255, 0.8);
+  grid-row-start: 1;
+  grid-row-end: 1;
+  
 }
 */
 /*use line numbers when spanning grid items.*/
@@ -102,12 +103,12 @@ body{
   background-color: rgba(255, 255, 255, 0.8);
   grid-row-start: 1;
   grid-row-end: 1;
+ 
 }
 /*experience*/
 .item2{
   background-color: rgba(255, 255, 255, 0.8);
   grid-column-start: 1;
-
   grid-column-end: 5;
 }
 /*Software and Operational Systems Experience*/
@@ -128,70 +129,6 @@ body{
   background-color: rgba(255, 255, 255, 0.8);
   grid-row-start: 1;
   grid-row-end: 1;
-}
-
-
-@media screen and (max-width:768px){
-    .item1 {
-      grid-row-start: 1;
-      grid-row-end: 3;
-      grid-column-start: 1;
-      grid-column-end: 3;
-    }
-
-    .item5 {
-      grid-column-start: 2;
-      grid-column-end: 4;
-    }
-}
-
-@media screen and (max-width:550px){
-    .item1 {
-      grid-row-start: 1;
-      grid-row-end: 3;
-      grid-column-start: 1;
-      grid-column-end: 4;
-    }
-    
-    .item5 {
-      grid-column-start: 1;
-      grid-column-end: 4;
-    }    
-}
-
-@media screen and (max-width:375px){
-    /*eductaion*/
-.item1 {
-  
-  grid-column-start: 1;
-  grid-column-end: 1;
-}
-/*experience*/
-.item2{
-  
-  grid-column-start: 2;
-  grid-column-end: 2;
-}
-/*Software and Operational Systems Experience*/
-.item3{
-  
-  grid-column-start: 3;
-  grid-column-end: 3;
-}
-/*Skills*/
-.item4{
-  
-  grid-column-start: 4;
-  grid-column-end: 4;
-
-}
-/*Accomplishments*/
-.item5{
-  
-  grid-column-start: 5;
-  grid-column-end: 5;
-}
-
 }
 
 /* effects apply to the entire footer */
@@ -257,3 +194,67 @@ footer {
       left: -10%;
     }
   }
+
+  /*mediaQ*/
+  @media screen and (max-width:768px){
+    .item1 {
+      grid-row-start: 1;
+      grid-row-end: 3;
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
+
+    .item5 {
+      grid-column-start: 2;
+      grid-column-end: 4;
+    }
+}
+
+@media screen and (max-width:550px){
+    .item1 {
+      grid-row-start: 1;
+      grid-row-end: 3;
+      grid-column-start: 1;
+      grid-column-end: 4;
+    }
+    
+    .item5 {
+      grid-column-start: 1;
+      grid-column-end: 4;
+    }    
+}
+
+@media screen and (max-width:375px){
+
+    /*eductaion*/
+.item1 {
+  
+  grid-column-start: 1;
+  grid-column-end: 1;
+}
+/*experience*/
+.item2{
+  
+  grid-column-start: 2;
+  grid-column-end: 2;
+}
+/*Software and Operational Systems Experience*/
+.item3{
+  
+  grid-column-start: 3;
+  grid-column-end: 3;
+}
+/*Skills*/
+.item4{
+  
+  grid-column-start: 4;
+  grid-column-end: 4;
+
+}
+/*Accomplishments*/
+.item5{
+  
+  grid-column-start: 5;
+  grid-column-end: 5;
+}
+}
