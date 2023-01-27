@@ -17,15 +17,12 @@
     </head>
 
     <body>
-
+     <div class="container">
       <header> 
   <!--Nav bar-->
         <nav class="navbar navbar-expand-lg bg-body-tertiary overide-nav">
-
-          <div class="container">
   
             <a class="navbar-brand">Menu</a>
-  
            <div class="collapse navbar-collapse" > 
               
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -48,21 +45,19 @@
 
               </ul>
             </div>
-          </div>
         </nav>
 <!--Profile Photo-->
         <div >
           <picture>
-           <source media="(max-width: 650px)" srcset="images/profilePhoto1.jpg"> 
+           <source media="(max-width: 600px)" srcset="images/profilePhoto1.jpg"> 
      
-           <source media="(max-width: 1400px)" srcset="images/profilePhoto2.jpg">  
+           <source media="(max-width: 992px)" srcset="images/profilePhoto2.jpg">  
      
            <img src="images/profilePhoto3.jpg" alt="A picture of Denelle Parsuramen"id="MainPicture">
      
           </picture>
         </div>
  <!--Intro -->       
-           <div class="container">
             <div class="Intro">
              <H1>Denelle Parsuramen</H1>
              
@@ -72,10 +67,11 @@
                  Windows, Linux and Mac systems. Proven skill in resolving problems quickly on first call.
                </p> 
              </div>
-           </div>
            
           </header>
+        </div>
 <!--Main content applying css mq & styling my grid lay out-->
+<main class="container">
     <div class="grid-container">
 
       <div class="item1 p-2" >
@@ -92,8 +88,7 @@
          <H3>High School Diploma</H3>
          <p>Lincoln Heights Secondary - Newcastle, KZN</p>
       </div>
-
-      <div class="item2">
+      <div class="item2 p-2">
         <H2 id="experience">Experience</H2>
          
          <H3>Technical Support Consultant </H3>
@@ -115,8 +110,8 @@
            Price, Ackermans and Pep retail companies.</p>
    
       </div>
-      <div class="item3">
-        <H2 id="text">Software and Operational Systems Experience</H2>
+      <div class="item3 p-2">
+        <H2 class="text">Software and Operational Systems Experience</H2>
          
          <ul>
    
@@ -136,8 +131,8 @@
    
          </ul>
       </div>  
-      <div class="item4">
-        <H2 id="text"> Skills</H2>
+      <div class="item4 p-2">
+        <H2 class="text"> Skills</H2>
          
          <ul>
    
@@ -151,8 +146,8 @@
    
          </ul>
       </div>
-      <div class="item5">
-        <H2 id="text">Accomplishments</H2>
+      <div class="item5 p-2">
+        <H2 class="text">Accomplishments</H2>
    
          <ul>
    
@@ -166,18 +161,18 @@
            <li>Promoted to Senior Technical Support Consultant after 3 months of employment. </li>
            <li>Recipient of individual and departmental awards for providing stellar client service. 2019 - 2022</li>
          </ul>
-      </div>
-        
+      </div>   
     </div>
-<!--contact form & animation logo-->
-    <footer>
+  </main>  
+<!--contact form -->
+    <footer class="container">
         <div class="container mt-5">
           <h3 id="contact"> Contact Me!</h3>
           <Form class="row g-3" action="https://formsubmit.co/3a82e42827dff4e718dc9c1a57fef078" method="POST">
-<!--Honeypot/Prevent Spam-->
+  <!--Honeypot/Prevent Spam-->
           <input type="text" name="_honey" style="display: none;">
-<!--Disable Captcha-->
-<input type="hidden" name="_captcha" value="false">
+  <!--Disable Captcha-->
+          <input type="hidden" name="_captcha" value="false">
 
             <div class="col-md-6">
             <label for="firstName" class="form-label">First Name</label>
@@ -209,7 +204,7 @@
           </div>
           </Form>
         </div>
-
+<!--animation logo-->
          <div class="position">
    
            <a class="fa" href="https://www.facebook.com/denelle.parsuramen"> 
