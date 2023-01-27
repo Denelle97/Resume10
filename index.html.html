@@ -22,7 +22,7 @@
   <!--Nav bar-->
         <nav class="navbar navbar-expand-lg bg-body-tertiary overide-nav">
 
-          <div class="container-fluid">
+          <div class="container">
   
             <a class="navbar-brand">Menu</a>
   
@@ -62,7 +62,7 @@
           </picture>
         </div>
  <!--Intro -->       
-           <div class="container-fluid ">
+           <div class="container">
             <div class="Intro">
              <H1>Denelle Parsuramen</H1>
              
@@ -171,31 +171,38 @@
     </div>
 <!--contact form & animation logo-->
     <footer>
-      <div class="container-fluid">
-        <h3 id="contact"> Contact Me</h3>
-
-        <div class="row">
-          
-          <div class="col p-2">
-            <input type="text" class="form-control" placeholder="Full Name" aria-label="Name">
+        <div class="container mt-5">
+          <h3 id="contact"> Contact Me!</h3>
+          <Form class="row g-3" action="https://formsubmit.co/denelle728@gmail.com" method="POST">
+          <div class="col-md-6">
+            <label for="firstName" class="form-label">First Name</label>
+            <input type="text" class="form-control" id="firstName" required>
           </div>
 
-          <div class="col p-2">
-            <input type="email" class="form-control" placeholder="Email Address" aria-label="Email">
+          <div class="col-md-6">
+            <label for="lastName" class="form-label">Last Name</label>
+            <input type="text" class="form-control" id="lastName" required>
           </div>
 
-          <div class="col2 p-2">
-            <input type="subject" class="form-control" placeholder="Subject" aria-label="Subject">
+          <div class="col-md-6">
+            <label for="emailinfo" class="form-label">E-mail</label>
+            <input type="email" class="form-control" id="emailinfo" required>
           </div>
 
-          <div class="col2 p-2 ">
-            <input type="text" class="form-control" placeholder="Message" aria-label="Message">
+          <div class="col-md-6">
+            <label for="phoneNumber" class="form-label">Phone Number</label>
+            <input type="text" class="form-control" id="phoneNumber" placeholder=" +27">
           </div>
 
-          <div >
+          <div class="col-md-12">
+            <label for="comments" class="form-label">Comments or Questions</label>
+            <textarea class="form-control" id="comments" rows="3" required></textarea>
+          </div>
+
+          <div class="col-md-12">
            <button type="submit" class="btn btn-light ">Submit</button>
           </div>
-
+          </Form>
         </div>
 
          <div class="position">
@@ -212,7 +219,6 @@
              <i class="fa-brands fa-linkedin-in"></i>
           </a>
         </div>
-      </div>
      
     </footer>
        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" 
